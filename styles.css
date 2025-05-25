@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedor con scroll horizontal para la tabla */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Estilo base de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    /* Evita que se colapse demasiado en móviles */
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Imagen responsive dentro de celdas */
+img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    img {
+        max-width: 80px;
+    }
+}
