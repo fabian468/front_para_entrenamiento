@@ -20,8 +20,8 @@ function renderTable(entries) {
             <td>${entry.loss.toFixed(2)}</td>
             <td>${entry.profitUSD.toFixed(2)}</td>
             <td>${entry.epsilon.toFixed(4)}</td>
-            <td>${entry.drawdown.toFixed(2)}</td>
-            <td>${entry.hitFrequency.toFixed(2)}%</td>
+            <td>${entry.drawdown.toFixed(2) * 100}</td>
+            <td>${entry.hitFrequency.toFixed(2) * 100}%</td>
             <td>${entry.modelPath ? `<a href="${entry.modelPath}" target="_blank">Ver</a>` : 'N/A'}</td>
             <td>${entry.graphImages.map(img => `<img src="${img}" alt="img">`).join(' ')}</td>
             <td>${new Date(entry.timestamp).toLocaleString()}</td>
